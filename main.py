@@ -11,6 +11,7 @@ from Scacchiera import Scacchiera
 from Pezzo import Pezzo
 from Torre import Torre
 from Cavallo import Cavallo
+from Alfiere import Alfiere
 
 
 def in_board(posizione):
@@ -69,12 +70,16 @@ def posizionaPezzi():
     scacchiera.metti(Torre('W'), ['H', 1])
     scacchiera.metti(Cavallo('W'),['B',1])
     scacchiera.metti(Cavallo('W'),['G',1])
+    scacchiera.metti(Alfiere('W'), ['C', 1])
+    scacchiera.metti(Alfiere('W'), ['F', 1])
 
     #vengono posizionate le pedine nere
     scacchiera.metti(Torre('B'), ['A',8])
     scacchiera.metti(Torre('B'), ['H', 8])
     scacchiera.metti(Cavallo('B'),['B',8])
     scacchiera.metti(Cavallo('B'),['G',8])
+    scacchiera.metti(Alfiere('B'), ['C', 8])
+    scacchiera.metti(Alfiere('B'), ['F', 8])
 
 
 
