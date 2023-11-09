@@ -16,7 +16,6 @@ class Alfiere(Pezzo):
                 #verifica che non ci sono pezzi in mezzo
                 first = ord(self.posizione[0]) + 1 if ord(self.posizione[0]) + 1 < ord(destinazione[0]) else ord(destinazione[0]) + 1  # prima colonna da esaminare
                 last = ord(destinazione[0]) if ord(self.posizione[0]) + 1 < ord(destinazione[0]) else ord(self.posizione[0])
-
                 firstc = self.posizione[1] + 1 if self.posizione[1] + 1 < destinazione[1] else destinazione[1] + 1  # prima riga da esaminare
                 lastc = destinazione[1] if self.posizione[1] + 1 < destinazione[1] else self.posizione[1]  # ultma riga da esaminare
                 r=range(first, last)

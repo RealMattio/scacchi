@@ -86,9 +86,7 @@ def posizionaPezzi():
 if __name__ == "__main__":
     # setup del gioco
     scacchiera = Scacchiera()
-    # posizione 4 pezzi bianchi nelle prime 4 righe della colonna A
     posizionaPezzi()
-
     scacchiera.visualizza()
     print()
 
