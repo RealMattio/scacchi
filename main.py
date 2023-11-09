@@ -12,6 +12,7 @@ from Pezzo import Pezzo
 from Torre import Torre
 from Cavallo import Cavallo
 from Alfiere import Alfiere
+from Regina import Regina
 
 
 def in_board(posizione):
@@ -66,12 +67,13 @@ def get_mossa():
 
 def posizionaPezzi():
     #vengono posizionate prima le pedine bianche
-    scacchiera.metti(Torre('W'), ['A',1])
+    scacchiera.metti(Torre('W'), ['A', 1])
     scacchiera.metti(Torre('W'), ['H', 1])
-    scacchiera.metti(Cavallo('W'),['B',1])
-    scacchiera.metti(Cavallo('W'),['G',1])
+    scacchiera.metti(Cavallo('W'),['B', 1])
+    scacchiera.metti(Cavallo('W'),['G', 1])
     scacchiera.metti(Alfiere('W'), ['C', 1])
     scacchiera.metti(Alfiere('W'), ['F', 1])
+    scacchiera.metti(Regina('W'),['D', 1])
 
     #vengono posizionate le pedine nere
     scacchiera.metti(Torre('B'), ['A',8])
@@ -80,6 +82,7 @@ def posizionaPezzi():
     scacchiera.metti(Cavallo('B'),['G',8])
     scacchiera.metti(Alfiere('B'), ['C', 8])
     scacchiera.metti(Alfiere('B'), ['F', 8])
+    scacchiera.metti(Regina('B'), ['D', 8])
 
 
 
