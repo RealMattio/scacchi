@@ -16,7 +16,7 @@ class Pedone(Pezzo):
     def possibili_posizioni(self):
         poss=[]
         if(self.posizione[0]=='A'):
-
+            variabile=1;
         elif(self.posizione[0]=='H'):
 
         else:
