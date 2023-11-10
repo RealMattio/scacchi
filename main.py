@@ -65,7 +65,7 @@ def get_mossa():
         else:
             print(f'La partenza e/o la destinazione della mossa {mossa} non corrispondono a caselle della scacchiera')
 
-def posizionaPezzi():
+def iniziaPartita():
     #vengono posizionate prima le pedine bianche
     scacchiera.metti(Torre('W'), ['A', 1])
     scacchiera.metti(Torre('W'), ['H', 1])
@@ -89,7 +89,7 @@ def posizionaPezzi():
 if __name__ == "__main__":
     # setup del gioco
     scacchiera = Scacchiera()
-    posizionaPezzi()
+    iniziaPartita()
     scacchiera.visualizza()
     print()
 
